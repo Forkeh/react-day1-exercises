@@ -40,6 +40,9 @@ export default function Buttons({ onSelected }: ButtonProps) {
             <button className="btn-w100" onClick={() => onSelected("lifting-state")}>
                 Lifting State
             </button>
+            <button className="btn-w100" onClick={() => onSelected("context")}>
+                Context Demo
+            </button>
         </>
     );
 }
