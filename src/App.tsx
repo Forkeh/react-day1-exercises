@@ -10,6 +10,8 @@ import StateDemo2 from "./exercises/StateDemo2";
 import StateDemo3 from "./exercises/StateDemo3";
 import UseEffectDemo from "./exercises/UseEffect";
 import FetchDemo1 from "./exercises/FetchDemo";
+import UserFormControlled from "./components/UserformControlled";
+import LiftingState from "./components/LiftingState";
 
 export default function App() {
     const [selectedView, setSelectedView] = useState("info");
@@ -39,6 +41,7 @@ export default function App() {
                         {selectedView == "state3" && <StateDemo3 title="State Demo 3 (Array)" />}
                         {selectedView == "useEffect" && <UseEffectDemo title="useEffect Demo" />}
                         {selectedView == "fetch1" && <FetchDemo1 title="Fetch Demo 1" />}
+                        {selectedView == "lifting-state" && <LiftingState title="Lifting State" />}
                         {/**Add the exercise components you create for each exercise using the key you used for the matching button  */}
                     </div>
                 </div>
