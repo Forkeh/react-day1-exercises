@@ -16,6 +16,9 @@ export default function Buttons({ onSelected }: ButtonProps) {
             <button className="btn-w100" onClick={() => onSelected("list")}>
                 List Demo
             </button>
+            <button className="btn-w100" onClick={() => onSelected("event1")}>
+                Event Demo 1 (Image buttons)
+            </button>
         </>
     );
 }

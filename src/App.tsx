@@ -3,6 +3,7 @@ import "./App.css";
 import PropsDemo from "./exercises/PropsDemo";
 import Buttons from "./components/Buttons";
 import ListDemo from "./exercises/ListDemo";
+import EventDemo1 from "./exercises/EventDemo";
 
 export default function App() {
     const [selectedView, setSelectedView] = useState("info");
@@ -25,6 +26,7 @@ export default function App() {
                         {selectedView == "info" && <p>All exercises for React day-1</p>}
                         {selectedView == "props1" && <PropsDemo title="Props Demo 1" />}
                         {selectedView == "list" && <ListDemo title="List Demo" />}
+                        {selectedView == "event1" && <EventDemo1 title="Event Demo 1" />}
                         {/**Add the exercise components you create for each exercise using the key you used for the matching button  */}
                     </div>
                 </div>
