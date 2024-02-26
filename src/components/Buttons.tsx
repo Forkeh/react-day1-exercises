@@ -32,7 +32,10 @@ export default function Buttons({ onSelected }: ButtonProps) {
                 State Demo 3 (Array)
             </button>
             <button className="btn-w100" onClick={() => onSelected("useEffect")}>
-                useEffect
+                useEffect Demo
+            </button>
+            <button className="btn-w100" onClick={() => onSelected("fetch1")}>
+                Fetch Demo
             </button>
         </>
     );
