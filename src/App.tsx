@@ -8,6 +8,7 @@ import FormUncontrolled from "./exercises/FormUncontrolled";
 import StateDemo1 from "./exercises/StateDemo1";
 import StateDemo2 from "./exercises/StateDemo2";
 import StateDemo3 from "./exercises/StateDemo3";
+import UseEffectDemo from "./exercises/UseEffect";
 
 export default function App() {
     const [selectedView, setSelectedView] = useState("info");
@@ -35,6 +36,7 @@ export default function App() {
                         {selectedView == "state1" && <StateDemo1 title="State Demo 1" />}
                         {selectedView == "state2" && <StateDemo2 title="State Demo 2 (Object)" />}
                         {selectedView == "state3" && <StateDemo3 title="State Demo 3 (Array)" />}
+                        {selectedView == "useEffect" && <UseEffectDemo title="useEffect Demo" />}
                         {/**Add the exercise components you create for each exercise using the key you used for the matching button  */}
                     </div>
                 </div>

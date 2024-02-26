@@ -31,6 +31,9 @@ export default function Buttons({ onSelected }: ButtonProps) {
             <button className="btn-w100" onClick={() => onSelected("state3")}>
                 State Demo 3 (Array)
             </button>
+            <button className="btn-w100" onClick={() => onSelected("useEffect")}>
+                useEffect
+            </button>
         </>
     );
 }
