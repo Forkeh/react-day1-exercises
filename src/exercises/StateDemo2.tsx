@@ -11,6 +11,7 @@ export default function StateDemo2({ title }: BaseProps) {
     });
 
     function handleNameChange(e: ChangeEvent<HTMLInputElement>) {
+        
         setUser((prevUser) => ({ ...prevUser, [e.target.name]: e.target.value, isActive: e.target.checked }));
         // user.name = e.target.value;
     }

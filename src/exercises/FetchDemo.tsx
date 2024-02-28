@@ -17,21 +17,19 @@ export default function FetchDemo1({ title }: BaseProps) {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        async function fetchUserData() {
-            fetchUser(userId, { signal: controller.signal }).then((response) => {
-                setLoading(true);
-                setUser(response);
-                console.log(response);
-                setLoading(false);
-            });
-        }
+        fetchUser(1, { signal: controller.signal }).then((response) => {
+            setLoading(true);
+            setUser(response);
+            console.log(response);
+            setLoading(false);
+        });
 
-        fetchUserData();
+        // fetchUserData();
 
         // return () => {
         //     controller.abort();
         // };
-    }, [userId]);
+    }, []);
 
     //Use this to fetch the next user when the "Next User" button is clicked
     //Make sure you understand why we don't need useEffect here

@@ -38,10 +38,7 @@ export default function UserTable({ users, editUser }: UserTableProps) {
                             </td>
                             <td>{user.isActive ? "Yes" : "No"}</td>
                             <td>
-                                <button onClick={() => handleEditUser(user.id || -1)}
-                                >
-                                    Edit
-                                </button>
+                                <button onClick={() => handleEditUser(user.id || -1)}>Edit</button>
                             </td>
                         </tr>
                     ))}
