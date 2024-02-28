@@ -1,5 +1,5 @@
 import { BaseProps } from "../types";
-import { User, users as usersDB, getNextId } from "../data/data";
+import { User, users as usersDB} from "../data/data";
 import { useState } from "react";
 import "../liftingState.css";
 import UserFormControlled from "./UserformControlled";
