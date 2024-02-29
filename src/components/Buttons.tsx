@@ -1,3 +1,4 @@
+import React from "react";
 type ButtonProps = {
     onSelected: (selected: string) => void;
     // btnStyle?: btnStyle;

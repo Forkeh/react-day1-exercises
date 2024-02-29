@@ -1,3 +1,4 @@
+import React from "react";
 import { useState, ChangeEvent } from "react";
 import { BaseProps } from "../types";
 import { User } from "../data/data";
@@ -11,7 +12,6 @@ export default function StateDemo2({ title }: BaseProps) {
     });
 
     function handleNameChange(e: ChangeEvent<HTMLInputElement>) {
-        
         setUser((prevUser) => ({ ...prevUser, [e.target.name]: e.target.value, isActive: e.target.checked }));
         // user.name = e.target.value;
     }

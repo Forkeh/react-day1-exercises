@@ -1,3 +1,4 @@
+import React from "react";
 import { BaseProps } from "../types";
 import { users } from "../data/data";
 import UserTable from "../components/UserTable";

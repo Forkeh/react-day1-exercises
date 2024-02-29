@@ -1,9 +1,10 @@
+import React from "react";
 import { BaseProps } from "../types";
-import { User, users as usersDB} from "../data/data";
+import { User, users as usersDB } from "../data/data";
 import { useState } from "react";
 import "../liftingState.css";
-import UserFormControlled from "./UserformControlled";
-import UserTable from "./UserTable";
+import UserFormControlled from "../components/UserformControlled";
+import UserTable from "../components/UserTable";
 
 interface AddEditDeleteFunction {
     (user: User, isDelete: boolean | undefined): void;
@@ -21,7 +22,9 @@ export default function LiftingState({ title }: BaseProps) {
         c) user does not have an id → Create the user
     */
         if (isDelete) setUsers(users.filter((currUser) => currUser !== user));
+
         if (user.id) setUsers(users.map((currUser) => (currUser.id === user.id ? user : currUser)));
+        
         if (!user.id) {
             const newUser = { ...user, id: users.length + 1 };
             setUsers([...users, newUser]);

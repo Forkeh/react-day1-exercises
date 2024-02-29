@@ -1,3 +1,4 @@
+import React from "react";
 import { BaseProps } from "../types";
 import { FormEvent, useRef } from "react";
 import { User } from "../data/data";
@@ -13,7 +14,7 @@ export default function UserForm({ title, onSubmitUser }: UserFormProps) {
 
     const onSubmit = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        
+
         //Read form inputs and submit the form to the parent
         const newUser: User = {
             name: nameRef.current?.value || "",

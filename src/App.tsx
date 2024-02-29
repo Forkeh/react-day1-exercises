@@ -1,3 +1,4 @@
+import React from "react";
 import { useState } from "react";
 import "./App.css";
 import PropsDemo from "./exercises/PropsDemo";
@@ -10,7 +11,7 @@ import StateDemo2 from "./exercises/StateDemo2";
 import StateDemo3 from "./exercises/StateDemo3";
 import UseEffectDemo from "./exercises/UseEffect";
 import FetchDemo1 from "./exercises/FetchDemo";
-import LiftingState from "./components/LiftingState";
+import LiftingState from "./exercises/LiftingState";
 import ContextDemoApp from "./exercises/ContextDemo";
 
 export default function App() {

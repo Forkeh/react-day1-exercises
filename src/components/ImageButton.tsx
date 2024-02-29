@@ -1,3 +1,4 @@
+import React from "react";
 interface Props {
     image: string;
     onClick: () => void;

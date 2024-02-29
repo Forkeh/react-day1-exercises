@@ -1,3 +1,4 @@
+import React from "react";
 import { BaseProps } from "../types";
 import { useState, useEffect, ChangeEvent, MouseEvent } from "react";
 import { User } from "../data/data";
@@ -67,7 +68,7 @@ export default function UserFormControlled({ onSubmitUser, defaultUser }: UserFo
                     Cancel
                 </button>
             }
-            {/* <p style={{ fontSize: "small" }}>{JSON.stringify(user)}</p> */}
+            <p style={{ fontSize: "small" }}>{JSON.stringify(user)}</p>
         </>
     );
 }

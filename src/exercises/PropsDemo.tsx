@@ -1,3 +1,4 @@
+import React from "react";
 import Profile from "../components/Profile";
 import { BaseProps } from "../types";
 import { useState } from "react";
